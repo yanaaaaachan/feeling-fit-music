@@ -1,0 +1,110 @@
+.title {
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    padding-top: 110px;
+    padding-bottom: 50px;
+    color: rgb(7, 4, 50);
+    font-weight: bold;
+   
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    z-index: 1;
+    background-image: url(ciaran-o-brien-rHvBQyfLPjk-unsplash\ copy.jpg);
+    position: relative;
+    height: 50vh;
+    background-size: cover;
+}
+
+
+.title h2 {
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    color: white;
+    font-size: 30px;
+
+}
+
+.title::before {
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 75vh;
+    z-index:0;
+}
+
+/*ul {　　　これつけると「おすすめ」の所変になる
+    overflow: hidden;
+    list-style: none;
+    margin: 0 auto;
+    z-index: 20;
+}*/
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    background-color: #baf4fc;
+    color: black;
+}
+
+ul li {
+    display: inline-block;
+    padding: 26px 10px 20px 10px;
+}
+
+.btn2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+
+.btn2:hover::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(,1 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+.btn1 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid black;
+}
+
+.body {
+    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Kiwi Maru', serif;
+    background-color: #baf4fc;
+    color: black;
+}
